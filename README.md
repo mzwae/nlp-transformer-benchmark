@@ -23,23 +23,3 @@ The project implements a robust three-stage benchmarking pipeline designed for d
 3. **Task 2 - Sentiment Analysis:** Fine-tuned `MARBERTv2` for 3-class polarity classification, optimizing epochs (2–3) to prevent validation loss divergence and overfitting.
 4. **Task 3 - Generative LLM Baseline:** Implemented a zero-shot prompting evaluation harness using `Qwen2.5-1.5B-Instruct` in FP16 precision, utilizing precise token slicing to isolate model completions from prompt text.
 
----
-
-## 📂 Repository Structure
-
-```text
-nlp-transformer-benchmark/
-├── notebooks/
-│   ├── 01_marsarcasm_sarcasm_finetune.ipynb
-│   ├── 02_marsarcasm_sentiment_finetune.ipynb
-│   └── 03_qwen_zeroshot_evaluation.ipynb
-├── src/
-│   ├── dataset.py
-│   ├── train.py
-│   └── evaluate.py
-├── assets/
-└── README.md
-
-```
-
----
